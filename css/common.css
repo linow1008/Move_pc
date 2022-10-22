@@ -1,0 +1,42 @@
+/* reset.css */
+@import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css");
+/* Text size*/
+.text-sm {
+  font-size: 14px !important;
+}
+.text-m {
+  font-size: 18px !important;
+}
+.text-lg {
+  font-size: 24px !important;
+}
+.text-xl {
+  font-size: 40px !important;
+}
+.text-2xl {
+  font-size: 60px !important;
+}
+
+/* Text color */
+.text-white {
+  color: #fff !important;
+}
+.text-green {
+  color: #009f78 !important;
+}
+.text-gray {
+  color: #787c80 !important;
+}
+
+/* bg-color */
+.bg-gray {
+  background-color: #f6f7f8 !important;
+}
+.bg-green {
+  background-color: #009f78 !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
