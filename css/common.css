@@ -1,5 +1,11 @@
 /* reset.css */
 @import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css");
+
+/* * {
+  padding: 0;
+  margin: 0;
+} */
+
 /* Text size*/
 .text-sm {
   font-size: 14px !important;

@@ -3,426 +3,516 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>MOVE PC</title>
     <link rel="stylesheet" href="./css/contents.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div>
-      <div class="bg-main_img">
-        <!-- header -->
-        <div class="header">
-          <div class="header-inner">
-            <div class="inner-left">
-              <div>
-                <img src="./resources/logo-img.png" alt="logo" />
-              </div>
-              <div>
-                <img src="./resources/logo-text.png" alt="logo" />
-              </div>
+    <div class="bg-main_img">
+      <!-- header -->
+      <div class="header">
+        <div class="header-inner">
+          <div class="inner-left">
+            <div>
+              <img src="./resources/logo-img.png" alt="logo" />
             </div>
-            <div class="inner-right text-white text-sm">
-              <div>
-                <a href="#">홈</a>
-              </div>
-              <div>
-                <a href="#">move</a>
-              </div>
-              <div>
-                <a href="#">자주 묻는 질문</a>
-              </div>
-              <div>
-                <a href="#">회사소개</a>
-              </div>
-              <div>
-                <a href="#">문의</a>
-              </div>
+            <div>
+              <img src="./resources/logo-text.png" alt="logo" />
             </div>
           </div>
-        </div>
-        <!-- main -->
-        <div class="content1">
-          <div class="inner">
-            <div class="logo-wrap">
-              <div>
-                <img src="./resources/logo-img-lg.png" alt="logo" />
-              </div>
-              <div>
-                <img src="./resources/logo-text-lg.png" alt="logo" />
-              </div>
+          <div class="inner-right text-white text-sm">
+            <div>
+              <a href="#">홈</a>
             </div>
-            <div class="text-wrap text-white text-xl">
-              <p>
-                신선식품부터 <br />
-                의약품까지 <br />
-                안전하게 지키는 필수앱
-              </p>
+            <div>
+              <a href="#">move</a>
+            </div>
+            <div>
+              <a href="#">자주 묻는 질문</a>
+            </div>
+            <div>
+              <a href="#">회사소개</a>
+            </div>
+            <div>
+              <a href="#">문의</a>
             </div>
           </div>
+          <div class="mobile-btn-wrap">
+            <span class="active menu">
+              <i class="fas fa-bars fa-lg"></i>
+            </span>
+            <span class="close">
+              <img src="./resources/close.png" />
+            </span>
+          </div>
+        </div>
+        <div class="mobile-menu-wrap">
+          <div>
+            <span>홈</span>
+          </div>
+          <span>move</span>
+          <span>자주 묻는 질문</span>
+          <span>회사소개</span>
+          <span>문의</span>
         </div>
       </div>
-      <div class="content2 bg-green contents">
-        <div>
-          <span class="text-xl text-white">순간 위치추적 메신저</span>
-          <img src="./resources/logo-text-m.png" alt="logo" />
-          <img src="./resources/logo-img-m.png" alt="logo" />
+      <!-- main -->
+      <div class="content1">
+        <div class="logo-wrap">
+          <img src="./resources/intro_1.png" />
+          <img src="./resources/intro_2.png" />
+          <img src="./resources/intro_3.png" />
+          <img src="./resources/intro_4.png" />
         </div>
-        <div class="subtext text-lg text-white">
-          <span>지금 바로 설치해 보세요</span>
+        <ul>
+          <li class="logo-prev prev">
+            <i class="fas fa-angle-left fa-lg"></i>
+            <div class="sumnail"></div>
+          </li>
+          <li class="logo-prev next">
+            <i class="fas fa-angle-right fa-lg"></i>
+            <div class="sumnail"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content2 bg-green contents">
+      <div>
+        <span class="text-xl text-white">순간 위치추적 메신저</span>
+        <img src="./resources/logo-text-m.png" alt="logo" />
+        <img src="./resources/logo-img-m.png" alt="logo" />
+      </div>
+      <div class="subtext text-lg text-white">
+        <span>지금 바로 설치해 보세요</span>
+      </div>
+      <div class="google-btn">
+        <div class="google-img">
+          <img src="./resources/google.png" alt="google" />
         </div>
-        <div class="google-btn">
-          <div class="google-img">
-            <img src="./resources/google.png" alt="google" />
-          </div>
-          <div class="text-white text-lg">
-            <span>Google Play</span>
-          </div>
+        <div class="text-white text-lg">
+          <span>Google Play</span>
         </div>
       </div>
-      <div class="content3 bg-gray contents">
-        <div class="phone-img">
-          <img src="./resources/phone1.png" alt="phone1" />
-        </div>
-        <div class="content-text-wrap">
-          <div class="subtitle text-green text-lg">
-            <span>Simple.</span>
-          </div>
-          <div class="title text-2xl">
-            <p>
-              전화번호로<br />
-              <span class="b">간편한 가입</span>
-            </p>
-          </div>
-        </div>
+    </div>
+    <div class="content3 bg-gray contents">
+      <div class="phone-img">
+        <img src="./resources/phone1.png" alt="phone1" />
       </div>
-      <div class="content4 contents">
-        <div class="phone-img">
-          <img src="./resources/phone1.png" alt="phone1" />
+      <div class="content-text-wrap">
+        <div class="subtitle text-green text-lg">
+          <span>Simple.</span>
         </div>
-        <div class="content-text-wrap">
-          <div class="subtitle text-green text-lg">
-            <span>Schedule.</span>
-          </div>
-          <div class="title text-2xl">
-            <p>
-              <span class="b">위치 추적</span><br />
-              스케줄 만들기
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="content5 bg-gray contents">
-        <div class="phone-img">
-          <img src="./resources/phone1.png" alt="phone1" />
-        </div>
-        <div class="content-text-wrap">
-          <div class="subtitle text-green text-lg">
-            <span>Track.</span>
-          </div>
-          <div class="title text-2xl">
-            <p>
-              순간<br />
-              <span class="b">위치추적</span> 시작!
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="content6 contents">
-        <div class="phone-img">
-          <img src="./resources/phone1.png" alt="phone1" />
-        </div>
-        <div class="content-text-wrap">
-          <div class="subtitle text-green text-lg">
-            <span>On Chat.</span>
-          </div>
-          <div class="title text-2xl">
-            <p>
-              <span class="b">채팅하면서</span><br />
-              함께 보는 지도
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="content7 contents bg-gray">
-        <div class="content-text-wrap">
-          <div class="subtitle text-green text-lg">
-            <span>Absolutely Free.</span>
-          </div>
-          <div class="title text-2xl">
-            <p>
-              그리고,<br />
-              <span class="b">무료 서비스</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="content8">
-        <div class="title text-2xl text-white">
+        <div class="title text-2xl">
           <p>
-            지금<br />
-            어디에 있는지<br />
-            한눈에 보여줍니다
+            전화번호로<br />
+            <span class="b">간편한 가입</span>
           </p>
         </div>
       </div>
-      <div class="content9 contents bg-gray">
-        <div class="title">
-          <div>
-            <img src="./resources/qes.png" alt="qes" />
-          </div>
-          <div class="title-text text-2xl">
-            <span>자주 묻는 질문</span>
-          </div>
+    </div>
+    <div class="content4 contents">
+      <div class="phone-img">
+        <img src="./resources/phone1.png" alt="phone1" />
+      </div>
+      <div class="content-text-wrap">
+        <div class="subtitle text-green text-lg">
+          <span>Schedule.</span>
         </div>
-        <div class="qes-wrap text-m">
-          <div class="qesEl text-green">
-            <span>Q. 무브는 어떤 서비스인가요?</span>
-          </div>
-          <div class="qesEl">
-            <span>Q. 위치 추적은 어떻게 할 수 있나요?</span>
-          </div>
-          <div class="qesEl-open">
-            <p class="">
-              무브는 순간 위치추적 메신저입니다.<br />
-              업무를 함께 하는 관계자나 일정을 공유할 친구에게 필요한 시간동안만 위치를 함께 볼 수 있는 ‘위치 공유 일정단톡방‘으로<br />
-              이용할 수 있습니다. 무브에서 스케줄을 만들어서 함께 할 사람들을 초대하고, 위치를 공유를 제안하여 동의를 받으면 스케줄<br />
-              시간 동안 위치를 함께 볼 수 있습니다. 화물의 이동이 많은 물류에서 유용하게 이용하실 수 있으며, 업무용으로 편리합니다.
-            </p>
-          </div>
-          <div class="qesEl">
-            <span>Q. 필요한 시간만 위치 추적이 가능한가요?</span>
-          </div>
-          <div class="qesEl">
-            <span>Q. 스케줄은 어떻게 만들면 되나요?</span>
-          </div>
-          <div class="qesEl">
-            <span>Q. 스케줄 초대는 어떻게 할 수 있나요?</span>
-          </div>
-          <div class="qesEl">
-            <span>Q. 위치 요청은 어떻게 할 수 있나요?</span>
-          </div>
+        <div class="title text-2xl">
+          <p>
+            <span class="b">위치 추적</span><br />
+            스케줄 만들기
+          </p>
         </div>
       </div>
-      <div class="content10">
-        <div class="inner">
-          <div class="title text-2xl">
-            <span>센툼팩토리얼 주식회사</span>
-          </div>
-          <div class="subtitle text-gray text-xl">
-            <span>Centum Factorial Inc.</span>
-          </div>
-          <div class="paragraph text-green text-lg">
-            <span>우리의 시작은 데이터입니다.</span>
-          </div>
-          <div class="paragraph">
-            <p>
-              우리는 위치부터 차량 적재함의 온도, 이동거리, 속도 등 화물의 이동과정에서 생성되는 비정형 대용량
-              <span class="paragraph text-green"
-                >IoT(사물인터넷)<br />
-                빅데이터</span
-              >를 수집분석하여 화물의 안전과 보호를 위해 시각화된 의사결정 자료로 제공하는 기술을 보유한 정보기술회사입니다.
-            </p>
-          </div>
-          <div class="paragraph">
-            <p>
-              <span class="text-green">글로벌공급망</span>에서 국경과 언어의 제약없이 누구나 균일한 품질의 IoT(사물인터넷) 데이터 서비스를
-              이용할 수 있도록 <span class="text-green">소셜메시징 플랫폼을</span> <span class="text-green">모바일앱</span>으로 서비스하고
-              있습니다. 사람들은 흔히 모바일 메신저라고 부릅니다. <span class="text-green">클라우드</span>형 협업툴이라고도 합니다.
-            </p>
-          </div>
-          <div class="paragraph">
-            <p>
-              비정형 대용량의 데이터를 수집분석하여 상용화하고 안정화시키는데는 꽤 오랜 시간이 필요했습니다. 지금은 쌓아온 데이터의 기록을
-              바탕으로 미래를 예측하고 집단적 대처가 가능케 하는 서비스를 <span class="text-green">인공지능 기술</span>로 개발합니다.
-            </p>
-          </div>
-          <div class="paragraph">
-            <p>
-              <span class="text-green">글로벌 정보기술회사 센툼팩토리얼</span>주식회사에서 무브 서비스를 통해 선보이게 될 비즈니스 모델은
-              <span class="text-green">블록체인</span>과 <span class="text-green">메타버스</span>로 개발됩니다.
-            </p>
-          </div>
+    </div>
+    <div class="content5 bg-gray contents">
+      <div class="phone-img">
+        <img src="./resources/phone1.png" alt="phone1" />
+      </div>
+      <div class="content-text-wrap">
+        <div class="subtitle text-green text-lg">
+          <span>Track.</span>
+        </div>
+        <div class="title text-2xl">
+          <p>
+            순간<br />
+            <span class="b">위치추적</span> 시작!
+          </p>
         </div>
       </div>
-      <div class="content11">
-        <div class="icon-wrap">
-          <div class="icon-box">
-            <div class="iconEl bg-green">
-              <img src="./resources/iot.png" alt="iot" />
-            </div>
-            <div class="icon-text">
-              <span>IoT</span>
-            </div>
-          </div>
-          <div class="icon-box">
-            <div class="iconEl bg-green">
-              <img src="./resources/big-data.png" alt="big-data" />
-            </div>
-            <div class="icon-text">
-              <span>Big Data</span>
-            </div>
-          </div>
-          <div class="icon-box">
-            <div class="iconEl bg-green">
-              <img src="./resources/ai.png" alt="ai" />
-            </div>
-            <div class="icon-text">
-              <span>AI</span>
-            </div>
-          </div>
-          <div class="icon-box">
-            <div class="iconEl bg-green">
-              <img src="./resources/cloud.png" alt="cloud" />
-            </div>
-            <div class="icon-text">
-              <span>Cloud</span>
-            </div>
-          </div>
-          <div class="icon-box">
-            <div class="iconEl bg-green">
-              <img src="./resources/blockchain.png" alt="blockchain" />
-            </div>
-            <div class="icon-text">
-              <span>Blockchain</span>
-            </div>
-          </div>
-          <div class="icon-box">
-            <div class="iconEl bg-green">
-              <img src="./resources/metaverse.png" alt="metaverse" />
-            </div>
-            <div class="icon-text">
-              <span>Metaverse</span>
-            </div>
-          </div>
+    </div>
+    <div class="content6 contents">
+      <div class="phone-img">
+        <img src="./resources/phone1.png" alt="phone1" />
+      </div>
+      <div class="content-text-wrap">
+        <div class="subtitle text-green text-lg">
+          <span>On Chat.</span>
+        </div>
+        <div class="title text-2xl">
+          <p>
+            <span class="b">채팅하면서</span><br />
+            함께 보는 지도
+          </p>
         </div>
       </div>
-      <div class="content12">
-        <div class="inner text-white">
-          <div>
-            <div class="subtitle text-gray text-xl">
-              <span>MAKE FAIR, NO FEAR</span>
-            </div>
-            <div class="title text-2xl">
-              <span>데이터로 이루어갑니다</span>
-            </div>
-          </div>
-          <div class="history-wrap">
-            <div class="history-item-wrap">
-              <div class="history-year">
-                <span>2022</span>
-              </div>
-              <div class="history-item">
-                <span class="yearMonth">2022.10</span>
-                <span class="point"></span>
-                <span class="title">2022 스마트모빌리티 물류산업전 전시</span>
-              </div>
-              <div class="history-item">
-                <span class="yearMonth">2022.10</span>
-                <span class="point"></span>
-                <span class="title">사물인터넷 소셜메시징플랫폼 특허 출원</span>
-              </div>
-              <div class="history-item">
-                <span class="yearMonth">2022.10</span>
-                <span class="point"></span>
-                <span class="title">위치추적업무용 메신저 MOVE 안드로이드 버전 출시</span>
-              </div>
-              <div class="history-year mt1">
-                <span>2021</span>
-              </div>
-              <div class="history-item">
-                <span class="yearMonth">2021.11</span>
-                <span class="point"></span>
-                <span class="title">창업성장기술개발사업 디딤돌과제 선정 수행</span>
-              </div>
-              <div class="history-item">
-                <span class="yearMonth">2021.08</span>
-                <span class="point"></span>
-                <span class="title">차량 사물인터넷 통신 및 데이터 분석기술 특허 등록</span>
-              </div>
-              <div class="history-year mt1">
-                <span>2020</span>
-              </div>
-              <div class="history-item">
-                <span class="yearMonth">2020.07</span>
-                <span class="point"></span>
-                <span class="title">위치기반서비스사업 신고</span>
-              </div>
-              <div class="history-item">
-                <span class="yearMonth">2020.03</span>
-                <span class="point"></span>
-                <span class="title">차량IoT 데이터 분석 저작권 등록</span>
-              </div>
-              <div class="history-item">
-                <span class="yearMonth">2020.03</span>
-                <span class="point"></span>
-                <span class="title">기업부설연구소 설립</span>
-              </div>
-              <div class="history-item">
-                <span class="yearMonth">2020.03</span>
-                <span class="point"></span>
-                <span class="title">TCB 기술인증 F4 획득</span>
-              </div>
-              <div class="history-item">
-                <span class="yearMonth">2020.03</span>
-                <span class="point"></span>
-                <span class="title">벤처기업 인증</span>
-              </div>
-              <div class="history-item">
-                <span class="yearMonth">2020.02</span>
-                <span class="point"></span>
-                <span class="title">화물차량 사물인터넷데이터 플랫폼 상용화</span>
-              </div>
-              <div class="history-year mt1">
-                <span>2019</span>
-              </div>
-              <div class="history-item">
-                <span class="yearMonth">2019.12</span>
-                <span class="point"></span>
-                <span class="title">사물위치정보 사업자 신고</span>
-              </div>
-              <div class="history-item">
-                <span class="yearMonth">2019.09</span>
-                <span class="point"></span>
-                <span class="title">IoT 데이터 분석플랫폼 개발</span>
-              </div>
-              <div class="history-item">
-                <span class="yearMonth">2019.07</span>
-                <span class="point"></span>
-                <span class="title">센툼팩토리얼 주식회사 설립</span>
-              </div>
-            </div>
-          </div>
+    </div>
+    <div class="content7 contents bg-gray">
+      <div class="content-text-wrap">
+        <div class="subtitle text-green text-lg">
+          <span>Absolutely Free.</span>
+        </div>
+        <div class="title text-2xl">
+          <p>
+            그리고,<br />
+            <span class="b">무료 서비스</span>
+          </p>
         </div>
       </div>
-      <div class="footer">
-        <div class="inner">
-          <div class="flex column">
-            <span>센툼팩토리얼 주식회사</span>
-            <span>Centum Factorial Inc.</span>
+    </div>
+    <div class="content8">
+      <div class="title text-2xl text-white">
+        <p>
+          지금<br />
+          어디에 있는지<br />
+          한눈에 보여줍니다
+        </p>
+      </div>
+    </div>
+    <div class="content9 contents bg-gray">
+      <div class="title">
+        <div>
+          <img src="./resources/qes.png" alt="qes" />
+        </div>
+        <div class="title-text text-2xl">
+          <span>자주 묻는 질문</span>
+        </div>
+      </div>
+      <div class="qes-wrap text-m">
+        <div class="qesEl text-green">
+          <span>Q. 무브는 어떤 서비스인가요?</span>
+        </div>
+        <div class="qesEl">
+          <span>Q. 위치 추적은 어떻게 할 수 있나요?</span>
+        </div>
+        <div class="qesEl-open">
+          <p class="">
+            무브는 순간 위치추적 메신저입니다.<br />
+            업무를 함께 하는 관계자나 일정을 공유할 친구에게 필요한 시간동안만 위치를 함께 볼 수 있는 ‘위치 공유 일정단톡방‘으로<br />
+            이용할 수 있습니다. 무브에서 스케줄을 만들어서 함께 할 사람들을 초대하고, 위치를 공유를 제안하여 동의를 받으면 스케줄<br />
+            시간 동안 위치를 함께 볼 수 있습니다. 화물의 이동이 많은 물류에서 유용하게 이용하실 수 있으며, 업무용으로 편리합니다.
+          </p>
+        </div>
+        <div class="qesEl">
+          <span>Q. 필요한 시간만 위치 추적이 가능한가요?</span>
+        </div>
+        <div class="qesEl">
+          <span>Q. 스케줄은 어떻게 만들면 되나요?</span>
+        </div>
+        <div class="qesEl">
+          <span>Q. 스케줄 초대는 어떻게 할 수 있나요?</span>
+        </div>
+        <div class="qesEl">
+          <span>Q. 위치 요청은 어떻게 할 수 있나요?</span>
+        </div>
+      </div>
+    </div>
+    <div class="content10">
+      <div class="inner">
+        <div class="title text-2xl">
+          <span>센툼팩토리얼 주식회사</span>
+        </div>
+        <div class="subtitle text-gray text-xl">
+          <span>Centum Factorial Inc.</span>
+        </div>
+        <div class="paragraph text-green text-lg">
+          <span>우리의 시작은 데이터입니다.</span>
+        </div>
+        <div class="paragraph">
+          <p>
+            우리는 위치부터 차량 적재함의 온도, 이동거리, 속도 등 화물의 이동과정에서 생성되는 비정형 대용량
+            <span class="paragraph text-green"
+              >IoT(사물인터넷)<br />
+              빅데이터</span
+            >를 수집분석하여 화물의 안전과 보호를 위해 시각화된 의사결정 자료로 제공하는 기술을 보유한 정보기술회사입니다.
+          </p>
+        </div>
+        <div class="paragraph">
+          <p>
+            <span class="text-green">글로벌공급망</span>에서 국경과 언어의 제약없이 누구나 균일한 품질의 IoT(사물인터넷) 데이터 서비스를
+            이용할 수 있도록 <span class="text-green">소셜메시징 플랫폼을</span> <span class="text-green">모바일앱</span>으로 서비스하고
+            있습니다. 사람들은 흔히 모바일 메신저라고 부릅니다. <span class="text-green">클라우드</span>형 협업툴이라고도 합니다.
+          </p>
+        </div>
+        <div class="paragraph">
+          <p>
+            비정형 대용량의 데이터를 수집분석하여 상용화하고 안정화시키는데는 꽤 오랜 시간이 필요했습니다. 지금은 쌓아온 데이터의 기록을
+            바탕으로 미래를 예측하고 집단적 대처가 가능케 하는 서비스를 <span class="text-green">인공지능 기술</span>로 개발합니다.
+          </p>
+        </div>
+        <div class="paragraph">
+          <p>
+            <span class="text-green">글로벌 정보기술회사 센툼팩토리얼</span>주식회사에서 무브 서비스를 통해 선보이게 될 비즈니스 모델은
+            <span class="text-green">블록체인</span>과 <span class="text-green">메타버스</span>로 개발됩니다.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="content11">
+      <div class="icon-wrap">
+        <div class="icon-box">
+          <div class="iconEl bg-green">
+            <img src="./resources/iot.png" alt="iot" />
           </div>
-          <div class="flex column p-1">
-            <span>사업자등록번호 : 448-87-01385 | 대표 : 남명수</span>
+          <div class="icon-text">
+            <span>IoT</span>
           </div>
-          <div class="flex column p-1">
-            <span>서울시 마포구 삼개로16 근신빌딩본관 305호</span>
-            <span>Kunshin Main Bldg. #305, 16, Samgae-ro, Mapo-gu, Seoul, Republic of Korea</span>
+        </div>
+        <div class="icon-box">
+          <div class="iconEl bg-green">
+            <img src="./resources/big-data.png" alt="big-data" />
           </div>
-          <div class="flex">
-            <span>이메일 move@100fac.com</span>
+          <div class="icon-text">
+            <span>Big Data</span>
           </div>
-          <div class="flex pt between percent-7">
-            <span>개인정보처리방침</span>
-            <span>서비스 이용약관</span>
-            <span>위치기반서비스 이용약관</span>
-            <span>문의</span>
-            <span>사업 제휴</span>
-            <span>IR</span>
+        </div>
+        <div class="icon-box">
+          <div class="iconEl bg-green">
+            <img src="./resources/ai.png" alt="ai" />
+          </div>
+          <div class="icon-text">
+            <span>AI</span>
+          </div>
+        </div>
+        <div class="icon-box">
+          <div class="iconEl bg-green">
+            <img src="./resources/cloud.png" alt="cloud" />
+          </div>
+          <div class="icon-text">
+            <span>Cloud</span>
+          </div>
+        </div>
+        <div class="icon-box">
+          <div class="iconEl bg-green">
+            <img src="./resources/blockchain.png" alt="blockchain" />
+          </div>
+          <div class="icon-text">
+            <span>Blockchain</span>
+          </div>
+        </div>
+        <div class="icon-box">
+          <div class="iconEl bg-green">
+            <img src="./resources/metaverse.png" alt="metaverse" class="mo-icon" />
+          </div>
+          <div class="icon-text">
+            <span>Metaverse</span>
           </div>
         </div>
       </div>
     </div>
+    <div class="content12">
+      <div class="inner text-white">
+        <div>
+          <div class="subtitle text-gray text-xl">
+            <span>MAKE FAIR, NO FEAR</span>
+          </div>
+          <div class="title text-2xl">
+            <span>데이터로 이루어갑니다</span>
+          </div>
+        </div>
+        <div class="history-wrap">
+          <div class="history-item-wrap">
+            <div class="history-year">
+              <span>2022</span>
+            </div>
+            <div class="history-item">
+              <span class="yearMonth">2022.10</span>
+              <span class="point"></span>
+              <span class="title">2022 스마트모빌리티 물류산업전 전시</span>
+            </div>
+            <div class="history-item">
+              <span class="yearMonth">2022.10</span>
+              <span class="point"></span>
+              <span class="title">사물인터넷 소셜메시징플랫폼 특허 출원</span>
+            </div>
+            <div class="history-item">
+              <span class="yearMonth">2022.10</span>
+              <span class="point"></span>
+              <span class="title">위치추적업무용 메신저 MOVE 안드로이드 버전 출시</span>
+            </div>
+            <div class="history-year mt1">
+              <span>2021</span>
+            </div>
+            <div class="history-item">
+              <span class="yearMonth">2021.11</span>
+              <span class="point"></span>
+              <span class="title">창업성장기술개발사업 디딤돌과제 선정 수행</span>
+            </div>
+            <div class="history-item">
+              <span class="yearMonth">2021.08</span>
+              <span class="point"></span>
+              <span class="title">차량 사물인터넷 통신 및 데이터 분석기술 특허 등록</span>
+            </div>
+            <div class="history-year mt1">
+              <span>2020</span>
+            </div>
+            <div class="history-item">
+              <span class="yearMonth">2020.07</span>
+              <span class="point"></span>
+              <span class="title">위치기반서비스사업 신고</span>
+            </div>
+            <div class="history-item">
+              <span class="yearMonth">2020.03</span>
+              <span class="point"></span>
+              <span class="title">차량IoT 데이터 분석 저작권 등록</span>
+            </div>
+            <div class="history-item">
+              <span class="yearMonth">2020.03</span>
+              <span class="point"></span>
+              <span class="title">기업부설연구소 설립</span>
+            </div>
+            <div class="history-item">
+              <span class="yearMonth">2020.03</span>
+              <span class="point"></span>
+              <span class="title">TCB 기술인증 F4 획득</span>
+            </div>
+            <div class="history-item">
+              <span class="yearMonth">2020.03</span>
+              <span class="point"></span>
+              <span class="title">벤처기업 인증</span>
+            </div>
+            <div class="history-item">
+              <span class="yearMonth">2020.02</span>
+              <span class="point"></span>
+              <span class="title">화물차량 사물인터넷데이터 플랫폼 상용화</span>
+            </div>
+            <div class="history-year mt1">
+              <span>2019</span>
+            </div>
+            <div class="history-item">
+              <span class="yearMonth">2019.12</span>
+              <span class="point"></span>
+              <span class="title">사물위치정보 사업자 신고</span>
+            </div>
+            <div class="history-item">
+              <span class="yearMonth">2019.09</span>
+              <span class="point"></span>
+              <span class="title">IoT 데이터 분석플랫폼 개발</span>
+            </div>
+            <div class="history-item">
+              <span class="yearMonth">2019.07</span>
+              <span class="point"></span>
+              <span class="title">센툼팩토리얼 주식회사 설립</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="inner">
+        <div class="flex column">
+          <span>센툼팩토리얼 주식회사</span>
+          <span>Centum Factorial Inc.</span>
+        </div>
+        <div class="flex column p-1">
+          <span>사업자등록번호 : 448-87-01385 | 대표 : 남명수</span>
+        </div>
+        <div class="flex column p-1">
+          <span>서울시 마포구 삼개로16 근신빌딩본관 305호</span>
+          <span>Kunshin Main Bldg. #305, 16, Samgae-ro, Mapo-gu, Seoul, Republic of Korea</span>
+        </div>
+        <div class="flex">
+          <span>이메일 move@100fac.com</span>
+        </div>
+        <div class="flex pt between percent-7">
+          <span>개인정보처리방침</span>
+          <span>서비스 이용약관</span>
+          <span>위치기반서비스 이용약관</span>
+          <span>문의</span>
+          <span>사업 제휴</span>
+          <span>IR</span>
+        </div>
+      </div>
+    </div>
   </body>
+  <script>
+    $(".logo-wrap").slick({
+      autoplay: false,
+      prevArrow: $(".prev"),
+      nextArrow: $(".next"),
+    });
+
+    $(document).ready(function () {
+      let aaa = $(".mobile-btn-wrap span");
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent);
+
+      aaa.click(function (e) {
+        let thisEle = $(this);
+        let spanClose = thisEle.closest("span");
+
+        if (spanClose.hasClass("menu")) {
+          spanClose.removeClass("active");
+          spanClose.next().addClass("active");
+          $(".mobile-menu-wrap").addClass("active");
+        } else {
+          spanClose.removeClass("active");
+          spanClose.prev().addClass("active");
+          $(".mobile-menu-wrap").removeClass("active");
+        }
+      });
+
+      if (!isMobile) {
+        $(".logo-prev.prev")
+          .on("click", function (e) {
+            $(this).trigger("mouseleave");
+          })
+          .on("mouseenter", function (e) {
+            let prevSlide = $(".slick-track").find("img[aria-hidden='false']").prev();
+
+            if (prevSlide.length <= 0) prevSlide = $(".slick-track").find("img:last-child");
+
+            $(this).addClass("active");
+            $(this)
+              .closest(".logo-prev")
+              .find(".sumnail")
+              .append($("<img>").attr("src", prevSlide.attr("src")));
+          })
+          .on("mouseleave", function (e) {
+            $(this).removeClass("active");
+            $(this).closest(".logo-prev").find(".sumnail").empty();
+          });
+
+        $(".logo-prev.next")
+          .on("click", function (e) {
+            $(this).trigger("mouseleave");
+          })
+          .on("mouseenter", function (e) {
+            let prevSlide = $(".slick-track").find("img[aria-hidden='false']").next();
+
+            if (prevSlide.length <= 0) prevSlide = $(".slick-track").find("img:first-child");
+
+            $(this).addClass("active");
+            $(this)
+              .closest(".logo-prev")
+              .find(".sumnail")
+              .append($("<img>").attr("src", prevSlide.attr("src")));
+          })
+          .on("mouseleave", function (e) {
+            $(this).removeClass("active");
+            $(this).closest(".logo-prev").find(".sumnail").empty();
+          });
+      }
+    });
+  </script>
 </html>
