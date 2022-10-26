@@ -48,6 +48,7 @@ body {
 
 .logo-prev {
   display: flex;
+  cursor: pointer;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -322,7 +323,7 @@ body {
 }
 
 .content12 {
-  height: 1480px;
+  min-height: 1480px;
   background-image: url("../resources/content12-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -336,7 +337,7 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 1480px;
+  height: 100%;
   background: linear-gradient(90deg, #000000 53.12%, rgba(0, 0, 0, 0.5) 100%);
   opacity: 0.7;
   z-index: -1;
@@ -472,20 +473,30 @@ body {
 @media only screen and (max-width: 600px) {
   html,
   body {
-    width: 100vh;
+    /* width: 100vh; */
   }
 
   .header {
     opacity: 1 !important;
   }
 
+  .bg-main_img {
+    height: 300px;
+    
+  }
+
+  .bg-main_img .content1 {
+    margin-top: 80px;
+  }
+
   .bg-main_img .header {
     z-index: 10;
-    position: absolute;
+    position: fixed;
+    top: 0;
     width: 100%;
     background: #283136;
     opacity: 0.9;
-    height: 70px;
+    height: 80px;
   }
 
   .inner-right {
@@ -507,7 +518,7 @@ body {
 
   .mobile-menu-wrap {
     position: absolute;
-    top: 70px;
+    top: 80px;
     z-index: 999;
     display: flex;
     flex-direction: column;

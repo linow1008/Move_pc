@@ -270,7 +270,7 @@
       </div>
     </div>
     <div class="content11">
-      <div class="icon-wrap">
+      <!-- <div class="icon-wrap">
         <div class="icon-box">
           <div class="iconEl bg-green">
             <img src="./resources/iot.png" alt="iot" />
@@ -319,7 +319,7 @@
             <span>Metaverse</span>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="content12">
       <div class="inner text-white">
@@ -447,10 +447,18 @@
     </div>
   </body>
   <script>
+    const image_cnt = $(".logo-wrap").find("img").length - 1;
+    // $(".logo-wrap").find('.slick-slide:not(".slick-cloned")').length - 1
+
     $(".logo-wrap").slick({
-      autoplay: false,
+      autoplay: true,
+      autoplaySpeed: 5000,
       prevArrow: $(".prev"),
       nextArrow: $(".next"),
+    })
+    .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+      $(".logo-prev.prev").trigger("mouseleave");
+      $(".logo-prev.next").trigger("mouseleave");
     });
 
     $(document).ready(function () {
@@ -472,47 +480,56 @@
         }
       });
 
-      if (!isMobile) {
-        $(".logo-prev.prev")
-          .on("click", function (e) {
-            $(this).trigger("mouseleave");
-          })
-          .on("mouseenter", function (e) {
-            let prevSlide = $(".slick-track").find("img[aria-hidden='false']").prev();
+      // if (!isMobile) {
+      //   $(".logo-prev.prev")
+      //     .on("click", function (e) {
+      //       // $(this).trigger("mouseleave");
+      //     })
+      //     .on("mouseenter", function (e) {
+      //       let prevSlide = $(".slick-track").find("img[aria-hidden='false']").prev();
 
-            if (prevSlide.length <= 0) prevSlide = $(".slick-track").find("img:last-child");
+      //       if (prevSlide.length <= 0) prevSlide = $(".slick-track").find("img:last-child");
 
-            $(this).addClass("active");
-            $(this)
-              .closest(".logo-prev")
-              .find(".sumnail")
-              .append($("<img>").attr("src", prevSlide.attr("src")));
-          })
-          .on("mouseleave", function (e) {
-            $(this).removeClass("active");
-            $(this).closest(".logo-prev").find(".sumnail").empty();
-          });
+      //       $(this).addClass("active");
+      //       $(this)
+      //         .closest(".logo-prev")
+      //         .find(".sumnail")
+      //         .append($("<img>").attr("src", prevSlide.attr("src")));
+      //     })
+      //     .on("mouseleave", function (e) {
+      //       $(this).removeClass("active");
+      //       $(this).closest(".logo-prev").find(".sumnail").empty();
+      //     }).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+      //       $(this).trigger("mouseleave");
+      //     });
 
-        $(".logo-prev.next")
-          .on("click", function (e) {
-            $(this).trigger("mouseleave");
-          })
-          .on("mouseenter", function (e) {
-            let prevSlide = $(".slick-track").find("img[aria-hidden='false']").next();
+      //   $(".logo-prev.next")
+      //     .on("click", function (e) {
+      //       // $(this).trigger("mouseleave");
+      //     })
+      //     .on("mouseenter", function (e) {
+      //       let prevSlide = $(".slick-track").find("img[aria-hidden='false']").next();
 
-            if (prevSlide.length <= 0) prevSlide = $(".slick-track").find("img:first-child");
+      //       if (prevSlide.length <= 0) prevSlide = $(".slick-track").find("img:first-child");
 
-            $(this).addClass("active");
-            $(this)
-              .closest(".logo-prev")
-              .find(".sumnail")
-              .append($("<img>").attr("src", prevSlide.attr("src")));
-          })
-          .on("mouseleave", function (e) {
-            $(this).removeClass("active");
-            $(this).closest(".logo-prev").find(".sumnail").empty();
-          });
-      }
+      //       $(this).addClass("active");
+      //       $(this)
+      //         .closest(".logo-prev")
+      //         .find(".sumnail")
+      //         .append($("<img>").attr("src", prevSlide.attr("src")));
+      //     })
+      //     .on("mouseleave", function (e) {
+      //       $(this).removeClass("active");
+      //       $(this).closest(".logo-prev").find(".sumnail").empty();
+      //     }).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+      //       console.log(event);
+      //       console.log(slick);
+      //       console.log(currentSlide);
+      //       console.log(nextSlide);
+
+      //       $(this).trigger("mouseleave");
+      //     });
+      // }
     });
   </script>
 </html>
