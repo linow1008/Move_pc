@@ -17,6 +17,9 @@
       crossorigin="anonymous"
     ></script>
   </head>
+  <!-- 메뉴 클릭 시 스크롤되어 내려가는 애니메이션 필요 	 홈 페이지를 아래로 스크롤 시 메뉴가 같이 위로 올라가서 메뉴가 보이지 않음 -->
+  <!-- 9	 자주묻는 질문- 마우스오버하면 초록색으로 바뀜 	 첫번째 질문의 형태로 이벤트 발생 
+  10	 자주 묻는 질문- 하단의 질문 목록에 질문 클릭 시 본문 보여지도록 구현 	 본문 내용은 동일한 텍스트 반복 사용해도 됨  -->
   <body>
     <div class="bg-main_img">
       <!-- header -->
@@ -87,10 +90,9 @@
       </div>
     </div>
     <div class="content2 bg-green contents">
-      <div>
-        <span class="text-xl text-white">순간 위치추적 메신저</span>
-        <img src="./resources/logo-text-m.png" alt="logo" />
-        <img src="./resources/logo-img-m.png" alt="logo" />
+      <div class="title">
+        <span class="text-xl text-white title-ml">순간 위치추적 메신저</span>
+        <img src="./resources/logo.png" class="logo-l" alt="logo" />
       </div>
       <div class="subtext text-lg text-white">
         <span>지금 바로 설치해 보세요</span>
@@ -270,7 +272,7 @@
       </div>
     </div>
     <div class="content11">
-      <!-- <div class="icon-wrap">
+      <div class="icon-wrap">
         <div class="icon-box">
           <div class="iconEl bg-green">
             <img src="./resources/iot.png" alt="iot" />
@@ -319,7 +321,7 @@
             <span>Metaverse</span>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
     <div class="content12">
       <div class="inner text-white">
@@ -334,6 +336,42 @@
         <div class="history-wrap">
           <div class="history-item-wrap">
             <div class="history-year">
+              <span>2022</span>
+            </div>
+            <div class="history-item">
+              <span class="yearMonth">2022.10</span>
+              <span class="point"></span>
+              <span class="title">2022 스마트모빌리티 물류산업전 전시</span>
+            </div>
+            <div class="history-item">
+              <span class="yearMonth">2022.10</span>
+              <span class="point"></span>
+              <span class="title">사물인터넷 소셜메시징플랫폼 특허 출원</span>
+            </div>
+            <div class="history-item">
+              <span class="yearMonth">2022.10</span>
+              <span class="point"></span>
+              <span class="title">위치추적업무용 메신저 MOVE 안드로이드 버전 출시</span>
+            </div>
+            <div class="history-year mt1">
+              <span>2022</span>
+            </div>
+            <div class="history-item">
+              <span class="yearMonth">2022.10</span>
+              <span class="point"></span>
+              <span class="title">2022 스마트모빌리티 물류산업전 전시</span>
+            </div>
+            <div class="history-item">
+              <span class="yearMonth">2022.10</span>
+              <span class="point"></span>
+              <span class="title">사물인터넷 소셜메시징플랫폼 특허 출원</span>
+            </div>
+            <div class="history-item">
+              <span class="yearMonth">2022.10</span>
+              <span class="point"></span>
+              <span class="title">위치추적업무용 메신저 MOVE 안드로이드 버전 출시</span>
+            </div>
+            <div class="history-year mt1">
               <span>2022</span>
             </div>
             <div class="history-item">
@@ -419,7 +457,7 @@
         </div>
       </div>
     </div>
-    <div class="footer">
+    <div class="footer text-sm">
       <div class="inner">
         <div class="flex column">
           <span>센툼팩토리얼 주식회사</span>
@@ -448,18 +486,18 @@
   </body>
   <script>
     const image_cnt = $(".logo-wrap").find("img").length - 1;
-    // $(".logo-wrap").find('.slick-slide:not(".slick-cloned")').length - 1
 
-    $(".logo-wrap").slick({
-      autoplay: true,
-      autoplaySpeed: 5000,
-      prevArrow: $(".prev"),
-      nextArrow: $(".next"),
-    })
-    .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-      $(".logo-prev.prev").trigger("mouseleave");
-      $(".logo-prev.next").trigger("mouseleave");
-    });
+    $(".logo-wrap")
+      .slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        prevArrow: $(".prev"),
+        nextArrow: $(".next"),
+      })
+      .on("beforeChange", function (event, slick, currentSlide, nextSlide) {
+        $(".logo-prev.prev").trigger("mouseleave");
+        $(".logo-prev.next").trigger("mouseleave");
+      });
 
     $(document).ready(function () {
       let aaa = $(".mobile-btn-wrap span");
